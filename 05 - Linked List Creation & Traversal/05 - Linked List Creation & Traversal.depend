@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1755684722 source:d:\dsa (git repo)\05 - linked list creation & traversal\main.c
+	<stdio.h>
+	<stdlib.h>
+
