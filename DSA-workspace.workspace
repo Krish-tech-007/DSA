@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="Workspace">
+		<Project filename="01 - ADT Array/ADT myArray.cbp" />
+		<Project filename="02 - Array Insertion/02 - Array Insertion.cbp" />
+		<Project filename="03 - Array Deletion/03 - Array Deletion.cbp" />
+		<Project filename="04 - Array Search/04 - Array Search.cbp" />
+		<Project filename="05 - Linked List Creation &amp; Traversal/05 - Linked List Creation &amp; Traversal.cbp" />
+		<Project filename="06 - Linked List Insertion/06 - Linked List Insertion.cbp" />
+		<Project filename="07 - Linked List Deletion/07 - Linked List Deletion.cbp" />
+		<Project filename="08 - Circular Linked List/08 - Circular Linked List.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>
