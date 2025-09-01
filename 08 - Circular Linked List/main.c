@@ -190,7 +190,7 @@ void deleteIndex(struct Node **ptr, int index){
     }
     struct Node *toDelete = temp->next;
     temp->next = temp->next->next;
-    free(toDelete);
+    free(toDelete);-
 }
 
 void freeMemory(struct Node *ptr){

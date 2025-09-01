@@ -9,5 +9,8 @@
 		<Project filename="06 - Linked List Insertion/06 - Linked List Insertion.cbp" />
 		<Project filename="07 - Linked List Deletion/07 - Linked List Deletion.cbp" />
 		<Project filename="08 - Circular Linked List/08 - Circular Linked List.cbp" />
+		<Project filename="09 - Doubly Linked List/09 - Doubly Linked List.cbp" />
+		<Project filename="10 - Stack/10 - Stack.cbp" />
+		<Project filename="11 - Stack implementation using Arrays/11 - Stack implementation using Arrays.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
