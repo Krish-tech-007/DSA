@@ -1,6 +1,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+//Similarly this can be implemented for <> in html
+
 struct Stack{
     int size;
     int top;
