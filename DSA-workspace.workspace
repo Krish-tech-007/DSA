@@ -12,5 +12,9 @@
 		<Project filename="09 - Doubly Linked List/09 - Doubly Linked List.cbp" />
 		<Project filename="10 - Stack/10 - Stack.cbp" />
 		<Project filename="11 - Stack implementation using Arrays/11 - Stack implementation using Arrays.cbp" />
+		<Project filename="12 - Stack implementation using Linked List/12 - Stack implementation using Linked List.cbp" />
+		<Project filename="13 - Parenthesis Matching using Stack/13 - Parenthesis Matching using Stack.cbp" />
+		<Project filename="14 - Multi Parenthesis matching using Stack/14 - Multi Parenthesis matching using Stack.cbp" />
+		<Project filename="15 - Infix, Prefix, Postfix/15 - Infix, Prefix, Postfix.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

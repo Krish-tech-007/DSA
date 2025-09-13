@@ -43,8 +43,8 @@ Tips:
 1. Parenthesize the expression according to precedence rules
 2. Enclose result in [] to indicate single unit, for understanding only, remove while operating
 */
+
 int main()
 {
-
     return 0;
 }
