@@ -18,6 +18,10 @@ Condition for a balanced expression:
 2. After expression ends, stack should be empty. If not empty, then unbalanced expression
 */
 
+// Drawback
+// This program does not tell if the overall expression is valid or nto
+// For example: ((9*)(-1*)). Here the parenthesis are balanced but the expression is not valid
+
 struct Stack{
     int size;
     int top;
@@ -56,7 +60,7 @@ int isValid(struct Stack *s, char *expression, int size){
             }
         }
 
-        if(*(expression+i) == ')'){
+        else if(*(expression+i) == ')'){
             int successful = pop(s);
             if(!successful){
                 printf("Unmatched closing brace\n");
