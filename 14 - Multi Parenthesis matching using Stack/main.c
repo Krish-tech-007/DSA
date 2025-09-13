@@ -43,6 +43,7 @@ int isValid(char *expression){
                 int successful = push(&s, *(expression+i));
                 if(!successful){
                     printf("Stack overflow\n");
+                    free(s.arr);
                     return 0;
                 }
         }
@@ -63,6 +64,7 @@ int isValid(char *expression){
             int successful = pop(&s, expected);
             if(!successful){
                 printf("Unmatched parenthesis\n");
+                free(s.arr);
                 return 0;
             }
         }
@@ -70,9 +72,10 @@ int isValid(char *expression){
 
     if(s.top!=-1){
         printf("Stack not empty\nUnmatched opening brace\n");
+        free(s.arr);
         return 0;
     }
-
+    free(s.arr);
     return 1;
 
 }
