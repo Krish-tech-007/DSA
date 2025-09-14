@@ -57,7 +57,7 @@ struct Operator stackTop(struct Stack *s){
 
 char *infixToPostfix(char *expression){
     struct Stack s;
-    s.size = strlen(expression);
+    s.size = strlen(expression) + 1;
     s.top = -1;
     s.arr = (struct Operator *) malloc(sizeof(struct Operator) * s.size);
 
