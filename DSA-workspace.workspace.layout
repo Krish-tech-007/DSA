@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_workspace_layout_file>
 	<FileVersion major="1" minor="0" />
-	<ActiveProject path="18 - Queue implementation using Array/18 - Queue implementation using Array.cbp" />
+	<ActiveProject path="19 - Circular Queue/19 - Circular Queue.cbp" />
+	<PreferredTarget name="Debug" />
 </CodeBlocks_workspace_layout_file>
