@@ -16,5 +16,7 @@
 		<Project filename="13 - Parenthesis Matching using Stack/13 - Parenthesis Matching using Stack.cbp" />
 		<Project filename="14 - Multi Parenthesis matching using Stack/14 - Multi Parenthesis matching using Stack.cbp" />
 		<Project filename="15 - Infix, Prefix, Postfix/15 - Infix, Prefix, Postfix.cbp" />
+		<Project filename="16 - Infix to Postfix using Stack/16 - Infix to Postfix using Stack.cbp" />
+		<Project filename="17 - Queue Intro/17 - Queue.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>

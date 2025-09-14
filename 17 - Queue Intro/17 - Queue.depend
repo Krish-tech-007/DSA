@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1757832813 source:d:\dsa (git repo)\17 - queue intro\main.c
+	<stdio.h>
+	<stdlib.h>
+
