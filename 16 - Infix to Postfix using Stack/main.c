@@ -109,5 +109,6 @@ int main()
     scanf("%[^\n]", expression);
     char * postfix = infixToPostfix(expression);
     printf("Postfix expression: %s\n", postfix);
+    free(postfix);
     return 0;
 }
