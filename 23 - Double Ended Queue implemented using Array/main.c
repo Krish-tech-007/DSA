@@ -115,10 +115,5 @@ int main()
     enqueueFront(&ROq, 1);
     display(&ROq);
 
-
-
-
-
-
     return 0;
 }
