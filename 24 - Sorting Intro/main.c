@@ -14,6 +14,8 @@ External Sorting algorithm does not load all the data into memory
 5. Adaptive: Already sorted data takes less time
 6. Recursive / Non recursive: Recursive if uses recursion
 */
+
+// If we want a sorting algorithm to sort ascending or descending, just change the sign
 int main()
 {
     printf("Hello world!\n");
