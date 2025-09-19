@@ -32,6 +32,8 @@ Example: 7 8 8 1 8
 Is the algorithm adaptive? No
 */
 
+// All elements to the left of i are sorted
+
 
 
 void display(int *arr, int size){
