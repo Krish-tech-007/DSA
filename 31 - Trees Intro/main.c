@@ -3,6 +3,7 @@
 
 // A tree is a non linear data structure
 // Linear data structure - Arrays, Linked List, Stack, Queue
+// A tree is ideal for representing hierarchical data
 
 /*
 Example tree:
