@@ -44,6 +44,9 @@ Example: For 7, it is 0. For 11, it is 1. For 4, it is 3.
 
 Height: No. of edges from the node to the deepest leaf
 Example: For 11, it is 2. For 7, it is 3.
+
+A tree is made up of node and edges.
+If a tree has n nodes, then it has n-1 edges
 */
 int main()
 {
