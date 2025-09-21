@@ -37,6 +37,7 @@ Siblings: Nodes belonging to the same parent.
 Ancestors: All nodes above the selected node are it's ancestors. Parent and Parent of parents.
 Example: 7 is ancestor of 4. But 8 is not an ancestor of 4.
 Descendants: All nodes below the selected node are it's descendants. Child and child of children.
+Degree of a node: No. of direct children it has
 
 Depth of a node: No. of edges from root to that node
 Example: For 7, it is 0. For 11, it is 1. For 4, it is 3.
