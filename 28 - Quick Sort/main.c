@@ -49,6 +49,26 @@ void quickSort(int *arr, int startIndex, int lastIndex){
 }
 
 /*
+Quick Sort Analysis:
+Worst case: When array is already sorted
+For array of size n, we have to partition the array n-1 times
+Loop -> n times
+Time complexity: O(n^2)
+
+Best case: When the pivot comes right in the middle
+Time complexity: O(nlogn)
+Example: We have an array of 16
+The pivot is in the middle so we split the array into 8 and 7
+    8 gets divided into 4 and 3
+        4 gets divided into 2 and 1
+        3 gets divided into 1 and 1
+    7 gets divided into 3 and 3
+        3 gets divided into 1 and 1
+        3 gets divided into 1 and 1
+
+*/
+
+/*
 Debug Edition - Working implementation
 For better understanding
 void quickSort(int *arr, int startIndex, int lastIndex){
@@ -119,85 +139,6 @@ int main()
     free(arr);
     return 0;
 }
-
-
-/*
-
-First try on own
-void quickSort(int *arr, int beginningIndex, int endIndex){
-    if(endIndex<=0 || beginningIndex <=0){
-        return;
-    }
-    else{
-        int pivot = arr[endIndex];
-        int i,j;
-        printf("Before entering for loop\n");
-        display(arr, 5);
-        for(j = beginningIndex, i=j-1; j<=endIndex; j++){
-            if(arr[j] < pivot){
-                i++;
-                swap(arr[i], arr[j]);
-            }
-        }
-        i++;
-        printf("After for loop and before swap\n");
-        display(arr, 5);
-        swap(arr[i], arr[j-1]);
-
-        printf("After for loop and pivot swap\n");
-        display(arr, 5);
-        printf("\n\n");
-        quickSort(arr, i-1, endIndex-i);
-        quickSort(arr, i+1, endIndex-i);
-
-        return;
-
-    }
-}
-*/
-
-/*
-Debug code:
-void quickSort(int *arr, int beginning, int size){
-    if(size<=1){
-        return;
-    }
-    else{
-        int pivot = *(arr+size-1);
-        printf("Pivot element: %d\n", pivot);
-        // Array - 1 2 3
-        // To access 3, arr[2]
-        // To access 3, *(arr+2)
-        // To access last element, *(arr+size-1)
-
-        int i,j;
-        printf("Before entering for loop\n");
-        display(arr, 5);
-        for(j = beginning, i=j-1; j<size; j++){
-            if(*(arr+j) < pivot){
-                i++;
-                swap(arr+i, arr+j);
-            }
-        }
-        i++;
-        printf("After for loop and before swap\n");
-        display(arr, 5);
-        swap(arr+i, arr+j-1);
-
-        // 5 4 3 2 1
-        //     p
-        // 0, 5-2-1 = 2
-        printf("After for loop and pivot swap\n");
-        display(arr, 5);
-        printf("\n\n");
-        quickSort(arr, 0, size-i-1);
-        quickSort(arr, i+1, size-i-1);
-
-        return;
-
-    }
-}
-*/
 
 
 
