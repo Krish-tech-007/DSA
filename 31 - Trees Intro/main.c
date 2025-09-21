@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+// A tree is a non linear data structure
+// Linear data structure - Arrays, Linked List, Stack, Queue
 
 /*
 Example tree:
@@ -38,7 +40,7 @@ Ancestors: All nodes above the selected node are it's ancestors. Parent and Pare
 Example: 7 is ancestor of 4. But 8 is not an ancestor of 4.
 Descendants: All nodes below the selected node are it's descendants. Child and child of children.
 Degree of a node: No. of direct children it has
-Degree of a tree: Highest degree of a node among all the nodes in the tree.
+Degree of a tree: Highest degree of a node among all the nodes in the tree.t
 
 Depth of a node: No. of edges from root to that node
 Example: For 7, it is 0. For 11, it is 1. For 4, it is 3.
