@@ -1,0 +1,56 @@
+import os
+import glob
+import xml.etree.ElementTree as ET
+
+# 🔧 Set your main folder path
+main_folder = r'D:\DSA (Git Repo)'  # ← Replace this with your actual path
+
+# 🔍 Find all .cbp files recursively
+cbp_files = glob.glob(os.path.join(main_folder, '**', '*.cbp'), recursive=True)
+
+# 🧼 Function to sanitize XML fields
+def sanitize(text):
+    return text.replace('&amp;', 'and').replace('&', 'and')
+
+# 🛠️ Fix each .cbp file
+for cbp_path in cbp_files:
+    try:
+        tree = ET.parse(cbp_path)
+        root = tree.getroot()
+        project = root.find('Project')
+        if project is not None:
+            # Fix title
+            title_node = project.find('Option[@title]')
+            if title_node is not None:
+                title_node.set('title', sanitize(title_node.get('title')))
+
+            # Fix output paths
+            for target in project.findall('.//Target'):
+                output_node = target.find('Option[@output]')
+                if output_node is not None:
+                    output_node.set('output', sanitize(output_node.get('output')))
+
+        # Save the sanitized file
+        tree.write(cbp_path, encoding='utf-8', xml_declaration=True)
+    except Exception as e:
+        print(f'⚠️ Failed to process {cbp_path}: {e}')
+
+# 📦 Build workspace XML
+workspace_name = 'MyWorkspace'
+workspace_path = os.path.join(main_folder, f'{workspace_name}.workspace')
+
+workspace_content = '<?xml version="1.0" encoding="UTF-8"?>\n'
+workspace_content += '<CodeBlocks_workspace_file>\n'
+workspace_content += f'<Workspace title="{workspace_name}">\n'
+
+for cbp in cbp_files:
+    rel_path = os.path.relpath(cbp, main_folder).replace('\\', '/')
+    workspace_content += f'    <Project filename="{rel_path}"/>\n'
+
+workspace_content += '</Workspace>\n</CodeBlocks_workspace_file>\n'
+
+# 💾 Save the workspace file
+with open(workspace_path, 'w', encoding='utf-8') as f:
+    f.write(workspace_content)
+
+print(f'✅ Workspace created: {workspace_path}')

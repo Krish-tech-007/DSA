@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_workspace_file>
+	<Workspace title="MyWorkspace">
+		<Project filename="01 - ADT Array/ADT myArray.cbp" />
+		<Project filename="02 - Array Insertion/02 - Array Insertion.cbp" />
+		<Project filename="03 - Array Deletion/03 - Array Deletion.cbp" />
+		<Project filename="04 - Array Search/04 - Array Search.cbp" />
+		<Project filename="05 - Linked List Creation &amp; Traversal/05 - Linked List Creation &amp; Traversal.cbp" />
+		<Project filename="06 - Linked List Insertion/06 - Linked List Insertion.cbp" />
+		<Project filename="07 - Linked List Deletion/07 - Linked List Deletion.cbp" />
+		<Project filename="08 - Circular Linked List/08 - Circular Linked List.cbp" />
+		<Project filename="09 - Doubly Linked List/09 - Doubly Linked List.cbp" />
+		<Project filename="10 - Stack/10 - Stack.cbp" />
+		<Project filename="11 - Stack implementation using Arrays/11 - Stack implementation using Arrays.cbp" />
+		<Project filename="12 - Stack implementation using Linked List/12 - Stack implementation using Linked List.cbp" />
+		<Project filename="13 - Parenthesis Matching using Stack/13 - Parenthesis Matching using Stack.cbp" />
+		<Project filename="14 - Multi Parenthesis matching using Stack/14 - Multi Parenthesis matching using Stack.cbp" />
+		<Project filename="15 - Infix, Prefix, Postfix/15 - Infix, Prefix, Postfix.cbp" />
+		<Project filename="16 - Infix to Postfix using Stack/16 - Infix to Postfix using Stack.cbp" />
+		<Project filename="17 - Queue Intro/17 - Queue.cbp" />
+		<Project filename="18 - Queue implementation using Array/18 - Queue implementation using Array.cbp" />
+		<Project filename="19 - Circular Queue/19 - Circular Queue.cbp" />
+		<Project filename="20 - Queue implementation using Linked List/20 - Queue implementation using Linked List.cbp" />
+		<Project filename="21 - Double Ended Queue/21 - Double Ended Queue.cbp" />
+		<Project filename="22 - Double Ended Queue implementation using Linked List/22 - Double Ended Queue implementation using Linked List.cbp" />
+		<Project filename="23 - Double Ended Queue implemented using Array/23 - Double Ended Queue implemented using Array.cbp" />
+		<Project filename="24 - Sorting Intro/24 - Sorting Intro.cbp" />
+		<Project filename="25 - Bubble sort/25 - Bubble sort.cbp" />
+		<Project filename="26 - Insertion Sort/26 - Insertion Sort.cbp" />
+		<Project filename="27 - Selection sort/27 - Selection sort.cbp" />
+		<Project filename="28 - Quick Sort/28 - Quick Sort.cbp" />
+		<Project filename="29 - Merge Sort/29 - Merge Sort.cbp" />
+		<Project filename="30 - Count Sort/30 - Count Sort.cbp" />
+		<Project filename="31 - Trees Intro/31 - Trees Intro.cbp" />
+		<Project filename="32 - Binary Tree Intro/32 - Binary Tree Intro.cbp" />
+		<Project filename="33 - Representation of a binary tree/33 - Representation of a binary tree.cbp" />
+		<Project filename="34 - Linked Representation of a Binary Tree/34 - Linked Representation of a Binary Tree.cbp" />
+		<Project filename="35 - Traversal in Binary Tree Intro/35 - Traversal in Binary Tree Intro.cbp" />
+		<Project filename="36 - PreOrder Traversal Binary Tree/36 - PreOrder Traversal Binary Tree.cbp" />
+		<Project filename="37 - PostOrder Traversal Binary Tree/37 - PostOrder Traversal Binary Tree.cbp" />
+		<Project filename="38 - InOrder Traversal Binary Tree/38 - InOrder Traversal Binary Tree.cbp" />
+	</Workspace>
+</CodeBlocks_workspace_file>

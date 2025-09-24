@@ -18,5 +18,9 @@
 		<Project filename="15 - Infix, Prefix, Postfix/15 - Infix, Prefix, Postfix.cbp" />
 		<Project filename="16 - Infix to Postfix using Stack/16 - Infix to Postfix using Stack.cbp" />
 		<Project filename="17 - Queue Intro/17 - Queue.cbp" />
+		<Project filename="36 - PreOrder Traversal Binary Tree/36 - PreOrder Traversal Binary Tree.cbp" />
+		<Project filename="37 - PostOrder Traversal Binary Tree/37 - PostOrder Traversal Binary Tree.cbp" />
+		<Project filename="35 - Traversal in Binary Tree Intro/35 - Traversal in Binary Tree Intro.cbp" />
+		<Project filename="34 - Linked Representation of a Binary Tree/34 - Linked Representation of a Binary Tree.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
