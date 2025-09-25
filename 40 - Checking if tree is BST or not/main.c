@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <limits.h>
 
 struct Node{
     int data;
@@ -28,6 +29,15 @@ int isSorted(int *arr, int size){
             return 0;
     }
     return 1;
+}
+
+int isBST(struct Node *root, int min, int max){
+    if(root==NULL)
+        return 1; // Empty tree is BST
+    if(root->data < min || root->data > max)
+        return 0;
+    return isBST(root->left,min,root->data-1) && isBST(root->right, root->data+1,max);
+    // Recurses left and right subtree
 }
 
 /*
@@ -76,6 +86,12 @@ int main()
         printf("Given Tree is a Binary Search Tree\n");
     else
         printf("Given Tree is not a Binary Search Tree\n");
+
+    // Alternatively
+    if(isBST(root, INT_MIN, INT_MAX))
+        printf("Confirmed BST\n");
+    else
+        printf("Confirmed not a BST\n");
 
     return 0;
 }
