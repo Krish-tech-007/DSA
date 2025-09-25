@@ -40,6 +40,26 @@ int isBST(struct Node *root, int min, int max){
     // Recurses left and right subtree
 }
 
+
+/*
+int isBST(struct Node *root){
+    static struct Node *prev = NULL; //prev means the node whose children we are checking
+    if(root!=NULL){
+        if(!isBST(root->left)){
+            return 0;
+        }
+        if(prev!=NULL && root->data <= prev->data){
+            return 0;
+        }
+        return isBST(root->right);
+    }
+    else{
+        return 1;
+    }
+
+}
+*/
+
 /*
 Example of Binary Search Tree:
             9
