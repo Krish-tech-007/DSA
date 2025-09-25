@@ -118,3 +118,97 @@ int main()
 
     return 0;
 }
+
+/*
+       10
+      /  \
+     5    15
+    / \     \
+   2   7     20
+
+ Step-by-Step Execution of isBST(root)
+We’ll simulate the in-order traversal: left → root → right
+1. Start at root: 10
+- Call isBST(10)
+- prev = NULL
+- Go left: call isBST(5)
+2. At node 5
+- Go left: call isBST(2)
+3. At node 2
+- Go left: isBST(NULL) → returns 1
+- Compare prev (still NULL) → no violation
+- Set prev = 2
+- Go right: isBST(NULL) → returns 1
+- Return 1 to caller (5)
+4. Back at node 5
+- Compare prev = 2 with 5 → OK (5 > 2)
+- Set prev = 5
+- Go right: call isBST(7)
+5. At node 7
+- Go left: isBST(NULL) → returns 1
+- Compare prev = 5 with 7 → OK (7 > 5)
+- Set prev = 7
+- Go right: isBST(NULL) → returns 1
+- Return 1 to caller (5), then to 10
+6. Back at node 10
+- Compare prev = 7 with 10 → OK (10 > 7)
+- Set prev = 10
+- Go right: call isBST(15)
+7. At node 15
+- Go left: isBST(NULL) → returns 1
+- Compare prev = 10 with 15 → OK (15 > 10)
+- Set prev = 15
+- Go right: call isBST(20)
+8. At node 20
+- Go left: isBST(NULL) → returns 1
+- Compare prev = 15 with 20 → OK (20 > 15)
+- Set prev = 20
+- Go right: isBST(NULL) → returns 1
+- Return 1 all the way up
+
+Every node passed the BST check. So isBST(root) returns 1.
+
+Not BST
+       10
+      /  \
+     5    15
+    / \   /
+   2   12 6
+
+This tree violates BST rules:
+- Node 12 is in the left subtree of 10 but is greater than 10 → ❌
+- Node 6 is in the right subtree of 10 but is less than 10 → ❌
+
+Step-by-Step Execution of isBST(root)
+We’ll simulate the in-order traversal: left → root → right
+1. Start at root: 10
+- Call isBST(10)
+- prev = NULL
+- Go left: call isBST(5)
+2. At node 5
+- Go left: call isBST(2)
+3. At node 2
+- Go left: isBST(NULL) → returns 1
+- Compare prev = NULL → OK
+- Set prev = 2
+- Go right: isBST(NULL) → returns 1
+- Return 1 to caller (5)
+4. Back at node 5
+- Compare prev = 2 with 5 → OK (5 > 2)
+- Set prev = 5
+- Go right: call isBST(12)
+5. At node 12
+- Go left: isBST(NULL) → returns 1
+- Compare prev = 5 with 12 → OK (12 > 5)
+- Set prev = 12
+- Go right: isBST(NULL) → returns 1
+- Return 1 to caller (5), then to 10
+6. Back at node 10
+- Compare prev = 12 with 10 → ❌ Violation!
+- 10 <= 12 → violates BST rule
+- Return 0 immediately
+
+❌ Final Result
+The function returns 0 because it detects that 10 is not greater than the previously visited node 12. This breaks the in-order increasing sequence required for a BST.
+
+*/
