@@ -44,6 +44,7 @@ int isBST(struct Node *root, int min, int max){
 /*
 int isBST(struct Node *root){
     static struct Node *prev = NULL; //prev means the node whose children we are checking
+    // Static variables aren't thread-safe. If you're running this in a multithreaded environment, this approach could lead to race conditions.
     if(root!=NULL){
         if(!isBST(root->left)){
             return 0;
@@ -51,7 +52,9 @@ int isBST(struct Node *root){
         if(prev!=NULL && root->data <= prev->data){
             return 0;
         }
-        return isBST(root->right);
+        return isBST(root->right); // Recursively checks the right subtree.
+        // The result of this call becomes the result of the current function call.
+
     }
     else{
         return 1;
