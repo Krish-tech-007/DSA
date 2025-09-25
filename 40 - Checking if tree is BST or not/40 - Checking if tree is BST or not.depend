@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1758777276 source:d:\dsa (git repo)\40 - checking if tree is bst or not\main.c
+	<stdio.h>
+	<stdlib.h>
+

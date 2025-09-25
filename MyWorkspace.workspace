@@ -39,5 +39,6 @@
 		<Project filename="36 - PreOrder Traversal Binary Tree/36 - PreOrder Traversal Binary Tree.cbp" />
 		<Project filename="37 - PostOrder Traversal Binary Tree/37 - PostOrder Traversal Binary Tree.cbp" />
 		<Project filename="38 - InOrder Traversal Binary Tree/38 - InOrder Traversal Binary Tree.cbp" />
+		<Project filename="39 - Binary Search Tree Into/39 - Binary Search Tree Into.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
