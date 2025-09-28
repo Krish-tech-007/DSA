@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1759046419 source:d:\dsa (git repo)\41 - searching in a binary search tree\main.c
+	<stdio.h>
+	<stdlib.h>
+
