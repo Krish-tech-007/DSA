@@ -41,5 +41,8 @@
 		<Project filename="38 - InOrder Traversal Binary Tree/38 - InOrder Traversal Binary Tree.cbp" />
 		<Project filename="39 - Binary Search Tree Into/39 - Binary Search Tree Into.cbp" />
 		<Project filename="40 - Checking if tree is BST or not/40 - Checking if tree is BST or not.cbp" />
+		<Project filename="41 - Searching in a Binary Search Tree/41 - Searching in a Binary Search Tree.cbp" />
+		<Project filename="42 - Iterative Search in Binary Search Tree/42 - Iterative Search in Binary Search Tree.cbp" />
+		<Project filename="43 - Insertion in a Binary Search Tree/43 - Insertion in a Binary Search Tree.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
