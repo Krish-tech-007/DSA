@@ -165,6 +165,24 @@ void deleteNode(struct Node *root, int data){
     printf("Element does not exist\nCannot delete\n");
 }
 
+struct Node* deleteTreeNode(struct Node *root, int data){
+    if(root==NULL)
+        return NULL;
+    if(root->left==NULL && root->right==NULL){
+        free(root);
+        return NULL;
+    }
+    if(data > root->data)
+        root->right = deleteTreeNode(root->right, data);
+    else if(data < root->data)
+        root->left = deleteTreeNode(root->left, data);
+    else{
+        struct Node *iPre = inOrderPredecessor(root,root);
+        root->data = iPre->data;
+        root->left = deleteTreeNode(root->left, iPre->data);
+    }
+    return root;
+}
 /*
 Example of Binary Search Tree:
             9
@@ -218,6 +236,15 @@ int main()
     printf("In Order: ");
     inOrder(root);
     printf("\n");
+
+    printf("Enter another element to delete: ");
+    scanf("%d", &n);
+    deleteTreeNode(root, n);
+
+    printf("In Order: ");
+    inOrder(root);
+    printf("\n");
+
 
     return 0;
 }
