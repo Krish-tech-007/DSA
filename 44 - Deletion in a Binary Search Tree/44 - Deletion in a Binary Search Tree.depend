@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1759201927 source:d:\dsa (git repo)\44 - deletion in a binary search tree\main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+
