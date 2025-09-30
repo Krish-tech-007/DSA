@@ -94,6 +94,16 @@ struct Node* inOrderPredecessor(struct Node *root, struct Node *node){
     }
 };
 
+struct Node* inOrderSucessor(struct Node *node){
+   static struct Node *prev = NULL;
+   if(node!=NULL){
+    prev = node;
+    inOrderSucessor(node->left);
+   }
+   else{
+    return prev;
+   }
+};
 void deleteNode(struct Node *root, int data){
     struct Node *prev = NULL;
     struct Node *toFree = NULL;
@@ -126,10 +136,19 @@ void deleteNode(struct Node *root, int data){
                 toFree = root;
                 // Replace by either in order successor or in order predecessor
                 struct Node *inOrderPre = inOrderPredecessor(root, root);
+                struct Node *inOrderSuc = inOrderSucessor(root->right);
                 printf("In Order predecessor: %d\n", inOrderPre->data);
+                printf("In Order successor: %d\n", inOrderSuc->data);
                 int inOrderPreData = inOrderPre->data;
+                int inOrderSucData = inOrderSuc->data;
+                if(countChildNodes(inOrderPre)==0){
                 deleteNode(root, inOrderPre->data);
                 toFree->data = inOrderPreData;
+                }
+                else{
+                    deleteNode(root,inOrderSuc->data);
+                    toFree->data = inOrderSuc->data;
+                }
                 break;
             }
 
@@ -182,6 +201,7 @@ int main()
 
     int n;
 
+    /*
     printf("Enter element to delete: ");
     scanf("%d", &n);
 
@@ -189,7 +209,7 @@ int main()
     printf("In Order: ");
     inOrder(root);
     printf("\n");
-
+    */
 
     printf("Enter another element to delete: ");
     scanf("%d", &n);
