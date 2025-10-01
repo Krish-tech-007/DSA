@@ -12,7 +12,7 @@ Why do we need AVL trees?
 What is an AVL tree?
 It is a height balanced binary search tree
 Height difference between the heights of left and right subtrees for every node is less than or equal to 1
-Balanced factor = Height of right subtree - Height of left subtree. Can be calculated for every node
+Balanced factor = Height of left subtree - Height of right subtree. Can be calculated for every node
 Can be -1, 0 or 1 for a node to be balanced in Binary Search Tree
 Can be -1, 0 or 1 for all nodes of an AVL tree
 */

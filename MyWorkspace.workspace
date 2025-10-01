@@ -47,5 +47,6 @@
 		<Project filename="44 - Deletion in a Binary Search Tree/44 - Deletion in a Binary Search Tree.cbp" />
 		<Project filename="45 - AVL Trees Intro/45 - AVL Trees Intro.cbp" />
 		<Project filename="46 - Insertion and Rotation in AVL Trees/46 - Insertion and Rotation in AVL Trees.cbp" />
+		<Project filename="47 -Rotation in AVL Trees with Multiple Nodes Intro/47 -Rotation in AVL Trees with Multiple Nodes Intro.cbp" />
 	</Workspace>
 </CodeBlocks_workspace_file>
